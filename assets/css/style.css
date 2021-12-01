@@ -1,13 +1,14 @@
 * /*combined selectors with identical styling*/
-{ /*add color as a universial styling as all text is white and ccan be overwritten if needed*/
+{ /*add color and font as a universial styling as all text is white and can be overwritten if needed*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color:#ffffff
+    color:#ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* changed background colour to improve constrast of the page for low visibility users */
 body {
-    background-color: #d9dcd6;
+    background-color: #8d918a;
 }
 
 .header {
@@ -21,29 +22,24 @@ body {
     font-size: 48px;
 }
 
-.seo { /*no need for header and h1 selector*/
+.seo { /*no need for header and h1 selector as it is its own unique selector*/
     color: #d9dcd6;
 }
 
-.header div {
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 /* list style none is not needed for unordered lists */
-.header div ul li {
+.header li {
     display: inline-block;
     margin-left: 25px;
 }
 
 a { /*added underline feature to make it appear like a clickable item*/
     text-decoration:underline ;
-}
-
-p {
-    font-size: 16px;
 }
 
 #hero {
@@ -54,6 +50,20 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#search-engine-optimization, #online-reputation-management, #social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+}
+
 /* removed selector for image as the image is already identified with a class */
 .float-left {
     float: left;
@@ -67,10 +77,13 @@ p {
     max-height: 200px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+h2 { /*removed specificity as there are only 2 sections with h2 tags and one gets applied later*/
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
 }
 
 #benefits {
@@ -80,7 +93,6 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
@@ -99,26 +111,11 @@ h3 { /*removed irrelvant selectors */
     max-width: 150px;
 }
 
-#search-engine-optimization, #online-reputation-management, #social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-}
-
-h2 { /*removed specificity as there are only 2 sections with h2 tags and one gets applied later*/
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.footer h2 {
     font-size: 20px;
 }
