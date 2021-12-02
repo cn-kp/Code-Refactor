@@ -1,5 +1,6 @@
 * /*combined selectors with identical styling*/
-{ /*add color and font as a universial styling as all text is white and can be overwritten if needed*/
+{ /*add color and font as a universial styling and can be overwritten if needed.
+    Rearranged styling to follow the sequence of the html*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -110,7 +111,6 @@ h3 { /*removed irrelvant selectors */
     margin: 10px auto;
     max-width: 150px;
 }
-
 
 .footer {
     padding: 30px;
